@@ -4,7 +4,7 @@
         <style>
             @font-face {
                 font-family: "PtMono";
-                src: url("http://marsmathis.com/launches/PTMono-Regular.ttf");
+                src: url("assets/PTMono-Regular.ttf");
             }
             
             td {
@@ -168,8 +168,8 @@ print
           drop-shadow(0px 0px 1px white);"></img><span class="tooltiptext">'.$item->launch_service_provider->name.'</span></div></a></td>
             <td>'.$item->rocket->configuration->full_name.'</td>
             <td>'.$name.'</td>
-            <td align="center"><a href="https://google.com/maps/place/'.$item->pad->latitude.','.$item->pad->longitude.'" target="_blank"><img src="map_pin.png"></img></a></td>
-            <td align="center"><a href="'.$item->vidURLs[0]->url.'" target="_blank" style="visibility: '.$viz.';"><img src="play_button.png"></img></a></td>
+            <td align="center"><a href="https://google.com/maps/place/'.$item->pad->latitude.','.$item->pad->longitude.'" target="_blank"><img src="assets/map_pin.png"></img></a></td>
+            <td align="center"><a href="'.$item->vidURLs[0]->url.'" target="_blank" style="visibility: '.$viz.';"><img src="assets/play_button.png"></img></a></td>
         </tr>';
         echo '<script type="text/javascript">
             var countDownDate'.$i.' = new Date("'.$item->net.'").getTime();
